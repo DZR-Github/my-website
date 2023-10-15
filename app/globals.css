@@ -5,15 +5,21 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+  background-color: #12a799;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.text{
+.text {
   text-align: center;
   color: white;
   font-size: 50px;
   font-weight: 900;
+}
+
+@layer components {
+  .feature {
+    @apply rounded-xl text-center text-[25px] font-extrabold w-[200px] h-[200px] bg-white mx-5;
+  }
 }

@@ -22,7 +22,7 @@ export default async function Home() {
   return (
     <React.Fragment>
       <Header></Header>
-      <p className="text">
+      <p className="welcome">
         <Welcome />
       </p>
       <div className="flex flex-wrap justify-center w-[80%] ml-auto mr-auto">

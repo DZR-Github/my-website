@@ -28,7 +28,7 @@ export default function Uploadthing() {
   const [show, setShow] = useState(false);
   const [arr, setArr] = useState([]);
   const [messageApi, contextHolder] = message.useMessage();
-  const text = "click to copy!";
+  const text = "Click to copy!";
 
   const successMsg = (msg: string) => {
     messageApi.open({
@@ -116,15 +116,15 @@ export default function Uploadthing() {
           arr.map((url) => {
             return (
               <div
-                className="w-[100px] h-[100px] m-1 flex items-center"
+                className="w-[100px] h-[100px] relative m-1 flex items-center"
                 key={url}
               >
                 <Tooltip className="pt-[10px]" placement="top" title={text}>
                   <Image
                     onClick={() => CopyUrl(url)}
-                    className="rounded hover:cursor-pointer"
-                    width={100}
-                    height={100}
+                    className="hover:cursor-pointer w-[100px]"
+                    fill
+                    sizes="100px"
                     src={url}
                     alt="Image"
                   />

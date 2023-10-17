@@ -10,8 +10,10 @@ interface featureProps {
 
 export function Feature({ feature }: { feature: featureProps }) {
   return (
-    <Link href={feature.pathname}>
-      <div className="feature">{feature.name}</div>
-    </Link>
+    <div className="mx-5">
+      <Link href={feature.pathname}>
+        <div className="feature">{feature.name}</div>
+      </Link>
+    </div>
   );
 }

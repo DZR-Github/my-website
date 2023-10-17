@@ -58,7 +58,7 @@ export default function Uploadthing() {
   }, []);
 
   return (
-    <div className="w-full h-full bg-white">
+    <div className="w-full h-[100vh] bg-white">
       <p className="mt-[10px] text-center text-[#12a698] font-extrabold text-[40px]">
         Uploadthing
       </p>
@@ -120,14 +120,15 @@ export default function Uploadthing() {
                 key={url}
               >
                 <Tooltip className="pt-[10px]" placement="top" title={text}>
-                  <Image
+                  <img src={url} alt="Image" loading="lazy" />
+                  {/* <Image
                     onClick={() => CopyUrl(url)}
                     className="hover:cursor-pointer w-[100px]"
                     fill
                     sizes="100px"
                     src={url}
                     alt="Image"
-                  />
+                  /> */}
                 </Tooltip>
               </div>
             );

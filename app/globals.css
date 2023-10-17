@@ -3,34 +3,33 @@
 @tailwind utilities;
 
 body {
-  width: 100vw;
-  height: 100vh;
   /* background-color: #12a799; */
-  background-color: white;
+  background-color: #091720;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .text {
-  color: #12a799;
+  /* color: #12a799; */
+  color: white;
   text-align: center;
   font-size: 50px;
   font-weight: 900;
 }
 
 .welcome {
-  background-image: linear-gradient(135deg, #69ff97 10%, #00e4ff 100%);
+  /* background-image: linear-gradient(135deg, #69ff97 10%, #00e4ff 100%); 
   color: transparent;
-  -webkit-background-clip: text;
-  text-align: center;
+  -webkit-background-clip: text;*/
+  color: white;
+  width: 55vw;
   font-size: 50px;
-  height: 100px;
   font-weight: 900;
 }
 
 @layer components {
   .feature {
-    @apply rounded-xl text-white bg-[#12a799] text-center text-[25px] font-extrabold w-[200px] h-[200px]  mx-5 my-2 leading-[200px];
+    @apply rounded-xl text-white bg-[#424660] text-center text-[25px] font-extrabold w-[200px] h-[200px] leading-[200px];
   }
 }
